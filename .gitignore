@@ -3,4 +3,4 @@ node_modules/
 
 # Archivos a ignorar
 .env
-archivo.txt
+db.txt
