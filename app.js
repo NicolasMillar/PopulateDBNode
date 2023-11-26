@@ -42,7 +42,6 @@ db.connect()
 async function insertData(origen, traduccion) {
   try {
     await db.none('INSERT INTO traduccion (id_idioma, origen, traduccion) VALUES (1, $1, $2)', [origen, traduccion]);
-    console.log('Datos insertados en la tabla "traduccion"');
   } catch (error) {
     console.error('Error al insertar datos en la tabla "traduccion":', error);
   }
